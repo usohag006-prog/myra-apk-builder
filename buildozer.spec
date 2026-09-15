@@ -9,3 +9,5 @@ orientation = portrait
 fullscreen = 0
 android.permissions = INTERNET
 source.dir = .
+android.api = 33
+android.accept_sdk_license = True
