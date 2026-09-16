@@ -27,6 +27,8 @@ jobs:
           pip install --upgrade cython==0.29.36 buildozer
 
       - name: Build with Buildozer
+        env:
+          CPU_COUNT: 2
         run: |
           yes | buildozer -v android debug
 
@@ -35,4 +37,3 @@ jobs:
         with:
           name: package
           path: bin/*.apk
-          
